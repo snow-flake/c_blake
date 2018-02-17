@@ -16,7 +16,7 @@ file(GLOB SOURCES "src/*.cpp" "src/*.c")
 file(GLOB TEST_SOURCES "test/test_library.cpp")
 
 #Generate the shared library from the sources
-#add_library(c_blake STATIC ${SOURCES})
+add_library(c_blake STATIC ${SOURCES})
 
 set(EXECUTABLE_OUTPUT_PATH "bin")
 add_executable(test_c_blake ${SOURCES} ${TEST_SOURCES})

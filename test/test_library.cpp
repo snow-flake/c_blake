@@ -33,6 +33,7 @@ inline static std::string bin2hex(const unsigned char *in, unsigned int len) {
 	return output;
 }
 
+
 const std::string hash_string(const std::string input_str) {
 	assert(sizeof(unsigned char) == sizeof(uint8_t));
 
